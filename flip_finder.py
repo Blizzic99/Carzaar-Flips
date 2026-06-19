@@ -235,23 +235,25 @@ st.markdown("""
     }
     section[data-testid="stSidebar"] .stMarkdown, 
     section[data-testid="stSidebar"] label, 
-    section[data-testid="stSidebar"] .stCaption {
-        color: #c9d1d9;
+        section[data-testid="stSidebar"] {
+        background: #161b22;
+        border-right: 1px solid #21262d;
+        color: #ffffff;               /* fallback color */
     }
-    
-    .stButton > button {
-        background: #21262d;
-        color: #c9d1d9;
-        border: 1px solid #30363d;
-        border-radius: 8px;
-        transition: all 0.2s;
+    /* Target all text-containing elements in the sidebar */
+    section[data-testid="stSidebar"] .stMarkdown,
+    section[data-testid="stSidebar"] label,
+    section[data-testid="stSidebar"] .stCaption,
+    section[data-testid="stSidebar"] .stTextInput label,
+    section[data-testid="stSidebar"] .stSelectbox label,
+    section[data-testid="stSidebar"] .stMultiselect label,
+    section[data-testid="stSidebar"] .stCheckbox label,
+    section[data-testid="stSidebar"] .stNumberInput label,
+    section[data-testid="stSidebar"] .stSlider label {
+        color: #ffffff !important;
     }
-    .stButton > button:hover {
-        background: #30363d;
-        border-color: #58a6ff;
-        color: white;
-    }
-    
+    /* Keep slider handles and tracks as default (no override) */
+
     .stTextInput > div > div > input,
     .stSelectbox > div > div {
         background: #0d1117;
