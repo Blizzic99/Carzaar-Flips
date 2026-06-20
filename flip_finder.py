@@ -688,7 +688,7 @@ st.subheader("💬 Suggestions?")
 st.caption("Help us improve Flip Finder. Your message goes directly to the developer.")
 
 suggestion_form = f"""
-<form action="https://formspree.io/f/https://formspree.io/f/mqeovvqj" method="POST">
+<form action="https://formspree.io/f/mqeovvqj" method="POST">
   <div style="display:flex; flex-direction:column; gap:0.5rem; max-width:500px;">
     <input type="email" name="email" placeholder="Your email (optional)" style="padding:0.5rem; border-radius:8px; border:1px solid #30363d; background:#0d1117; color:#c9d1d9;">
     <textarea name="message" rows="4" placeholder="Your suggestion..." style="padding:0.5rem; border-radius:8px; border:1px solid #30363d; background:#0d1117; color:#c9d1d9;"></textarea>
